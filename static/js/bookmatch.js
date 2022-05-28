@@ -1,13 +1,29 @@
 
 
+
 const displayresults = () => {
-    fetch('/api/results')
+
+    var search = document.querySelector('input').value;
+    console.log(search);
+    fetch('/api/results?text=${search}')
+
+    
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+            const 
+            document.querySelector('#results').innerHTML = 
+
+        
+
+        
+
+
         
 
 }
+
         
-        displayresults();
+
+
 
         

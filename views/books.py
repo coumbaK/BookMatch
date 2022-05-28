@@ -14,14 +14,13 @@ class BookListEndpoint(Resource):
     
 
     def get (self) : 
-        # args = request.args
+        args = request.args
         s = LibgenSearch()
-        # text = args.get('text')
-        results = s.search_title("pride")
+        text = args.get('text')
+        results = s.search_title(text)
         
         
         return Response(json.dumps(results), mimetype="application/json", status=200)
-
 
 
 
