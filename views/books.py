@@ -4,7 +4,7 @@ from libgen_api import LibgenSearch
 # from flask import Blueprint, render_template, request, redirect, url_for, flash
 from flask import Response, request
 from flask_restful import Resource
-from models import Book, db
+
 import json
 
 def get_path():
